@@ -28,6 +28,7 @@ function github_mark_failed_on_exit {
     trap '[ $? == "0" ] || github_status state:failure "failed"' EXIT
 }
 
+git fetch
 git remote prune origin
 
 github_mark_failed_on_exit
