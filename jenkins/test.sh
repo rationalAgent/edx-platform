@@ -28,8 +28,8 @@ function github_mark_failed_on_exit {
     trap '[ $? == "0" ] || github_status state:failure "failed"' EXIT
 }
 
-git fetch
 git remote prune origin
+git checkout $GIT_BRANCH
 
 github_mark_failed_on_exit
 github_status state:pending "is running"
