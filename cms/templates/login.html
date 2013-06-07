@@ -8,20 +8,20 @@
 <div class="wrapper-content wrapper">
   <section class="content">
     <header>
-      <h1 class="title title-1">Sign In to edX Studio</h1>
-      <a href="${reverse('signup')}" class="action action-signin">Don't have a Studio Account? Sign up!</a>
+      <h1 class="title title-1">Sign In</h1>
+      <a href="${reverse('signup')}" class="action action-signin">Don't have an Account? Sign up!</a>
     </header>
 
     <article class="content-primary" role="main">
       <form id="login_form" method="post" action="login_post">
         
         <fieldset>
-          <legend class="sr">Required Information to Sign In to edX Studio</legend>
+          <legend class="sr">Required Information to Sign In</legend>
           
           <ol class="list-input">
             <li class="field text required" id="field-email">
               <label for="email">Email Address</label>
-              <input id="email" type="email" name="email" placeholder="e.g. jane.doe@gmail.com" />              
+              <input id="email" type="email" name="email" placeholder="e.g. jane.doe@iiitd.ac.in" />              
             </li>
 
             <li class="field text required" id="field-password">
@@ -33,7 +33,7 @@
         </fieldset>
 
         <div class="form-actions">
-          <button type="submit" id="submit" name="submit" class="action action-primary">Sign In to edX Studio</button>
+          <button type="submit" id="submit" name="submit" class="action action-primary">Sign In</button>
         </div>
 
         <!-- no honor code for CMS, but need it because we're using the lms student object -->
